@@ -1,0 +1,128 @@
+@import "reset";
+@import "base";
+@import "baseText";
+@import "flex";
+
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+.bg-black{
+    background-color: black;
+    padding-top: 40px;
+}
+.navbar{
+    a{
+        color: #D1D1D1;
+        max-width: 306px;
+        &:hover{
+            color: #00FFA3;
+        }
+    }
+}
+.profile{
+    padding: 72px 0;
+    img{
+        margin-right: 24px;
+    }
+}
+.profile-content h1{
+    text-align: right;
+    color: #00FFA3;
+}
+.btn{
+    max-width: 185px;
+    padding: 12px 24px;
+    border-radius: 32px;
+    text-align: center;
+    display: flex;
+    &:hover{
+        color: #00FFA3;
+        background-color: #2f3030;
+    }
+}
+.btn-white{
+    background: #FFF;
+    color: #000;
+    align-self: end;
+}
+.btn-black{
+    background: #000;
+    color: #fff;
+}
+.bg-image{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+    background-size: cover;
+}
+.introduction{
+    padding: 160px 0;
+}
+.introduction-content{
+    max-width: 526px;
+    margin-right: 24px;
+    p{
+        margin-top: 36px;
+        margin-bottom: 32px;
+    }
+}
+.introudction-img{
+    gap: 24px;
+}
+.about{
+    padding: 160px 0;
+    gap: 24px;
+    align-items: center;
+}
+.about-skill{
+    flex-wrap: wrap;
+    gap: 24px;
+    li{
+        max-width: 306px;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        border: 1px solid #E3E3E3;
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+    }
+}
+.about-me{
+    max-width: 526px;
+    h2{
+        margin-bottom: 36px;
+    }
+}
+.bg-gradient{
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+    ;
+}
+.contact{
+    padding: 96px 0;
+}
+.contact-text{
+    gap: 16px;
+}
+.contact-icon{
+    gap: 20px;
+    img{
+        max-width: 162px;
+        &:hover{
+            filter: drop-shadow(0 0 0.75rem rgba(144, 148, 255, 0.90))
+        }
+    }
+}
+.project{
+    padding: 160px 0;
+    h2{
+        max-width: 746px;
+        margin-bottom: 16px;
+        margin-left: auto;
+    }
+    img{
+        margin-right: 24px;
+    }
+}
+.footer{
+    padding: 40px 0;
+    text-align: center;
+}

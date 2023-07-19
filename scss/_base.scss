@@ -1,0 +1,16 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Bruno Ace SC', cursive;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    display: block;
+}

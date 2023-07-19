@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: 'Bruno Ace SC', cursive;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+/* 字型大小 */
+h1 {
+  font-size: 128px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+/* 字體顏色 */
+.text-primary {
+  color: white;
+}
+
+.text-secondary {
+  color: #15161D;
+}
+
+/* flex */
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.item-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.bg-black {
+  background-color: black;
+  padding-top: 40px;
+}
+
+.navbar a {
+  color: #D1D1D1;
+  max-width: 306px;
+}
+
+.navbar a:hover {
+  color: #00FFA3;
+}
+
+.profile {
+  padding: 72px 0;
+}
+
+.profile img {
+  margin-right: 24px;
+}
+
+.profile-content h1 {
+  text-align: right;
+  color: #00FFA3;
+}
+
+.btn {
+  max-width: 185px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.btn:hover {
+  color: #00FFA3;
+  background-color: #2f3030;
+}
+
+.btn-white {
+  background: #FFF;
+  color: #000;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.btn-black {
+  background: #000;
+  color: #fff;
+}
+
+.bg-image {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+  background-size: cover;
+}
+
+.introduction {
+  padding: 160px 0;
+}
+
+.introduction-content {
+  max-width: 526px;
+  margin-right: 24px;
+}
+
+.introduction-content p {
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
+
+.introudction-img {
+  gap: 24px;
+}
+
+.about {
+  padding: 160px 0;
+  gap: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-skill {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px;
+}
+
+.about-skill li {
+  max-width: 306px;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4px;
+  border: 1px solid #E3E3E3;
+  -webkit-box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+}
+
+.about-me {
+  max-width: 526px;
+}
+
+.about-me h2 {
+  margin-bottom: 36px;
+}
+
+.bg-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#050014), to(rgba(1, 2, 30, 0.89)));
+  background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+
+.contact {
+  padding: 96px 0;
+}
+
+.contact-text {
+  gap: 16px;
+}
+
+.contact-icon {
+  gap: 20px;
+}
+
+.contact-icon img {
+  max-width: 162px;
+}
+
+.contact-icon img:hover {
+  -webkit-filter: drop-shadow(0 0 0.75rem rgba(144, 148, 255, 0.9));
+          filter: drop-shadow(0 0 0.75rem rgba(144, 148, 255, 0.9));
+}
+
+.project {
+  padding: 160px 0;
+}
+
+.project h2 {
+  max-width: 746px;
+  margin-bottom: 16px;
+  margin-left: auto;
+}
+
+.project img {
+  margin-right: 24px;
+}
+
+.footer {
+  padding: 40px 0;
+  text-align: center;
+}
+/*# sourceMappingURL=all.css.map */
