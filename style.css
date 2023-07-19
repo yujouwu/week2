@@ -1,0 +1,242 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 自定義CSS 開始*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Bruno Ace SC', cursive;
+}
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+
+/* 字型大小 */
+.text-xl{
+    font-size: 128px;
+}
+.text-l{
+    font-size: 64px;
+}
+.text-m{
+    font-size: 24px;
+}
+.text-s{
+    font-size: 20px;
+}
+
+/* 字體顏色 */
+.text-primary{
+    color: white;
+}
+.text-secondary{
+    color: #15161D;;
+}
+
+h1{
+    font-size: 128px;
+}
+h2{
+    font-size: 64px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 20px;
+}
+
+
+.container{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+}
+.bg-black{
+    background-color: black;
+    padding-top: 40px;
+}
+.navbar{
+    justify-content: space-between;
+}
+.navbar a{
+    color: #D1D1D1;
+    max-width: 306px;
+}
+.navbar a:hover{
+    color: #00FFA3;
+}
+.profile{
+    justify-content: space-between;
+    padding: 72px 0;
+}
+.profile img{
+    margin-right: 24px;
+}
+.profile-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profile-content h1{
+    text-align: right;
+    color: #00FFA3;
+}
+.btn{
+    max-width: 185px;
+    padding: 12px 24px;
+    border-radius: 32px;
+    text-align: center;
+    display: flex;
+}
+.btn-white{
+    background: #FFF;
+    color: #000;
+    align-self: end;
+}
+.btn-black{
+    background: #000;
+    color: #fff;
+}
+.btn:hover{
+    color: #00FFA3;
+    background-color: #2f3030;
+}
+.bg-image{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+    background-size: cover;
+}
+.introduction{
+    padding: 160px 0;
+}
+.introduction-content{
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.introduction-content p{
+    margin-top: 36px;
+    margin-bottom: 32px;
+}
+.introudction-img{
+    gap: 24px;
+}
+.about{
+    padding: 160px 0;
+    gap: 24px;
+    align-items: center;
+}
+.about-skill{
+    flex-wrap: wrap;
+    gap: 24px;
+}
+.about-skill li{
+    max-width: 306px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid #E3E3E3;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.about-me{
+    max-width: 526px;
+}
+.about-me h2{
+    margin-bottom: 36px;
+}
+.bg-gradient{
+    background: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+    ;
+}
+.contact{
+    justify-content: space-between;
+    align-items: center;
+    padding: 96px 0;
+}
+.contact-text{
+    gap: 16px;
+}
+.contact-icon{
+    gap: 20px;
+}
+.contact-icon img{
+    max-width: 162px;
+}
+.contact-icon img:hover{
+    filter: drop-shadow(0 0 0.75rem rgba(144, 148, 255, 0.90))
+}
+.project{
+    padding: 160px 0;
+}
+.project h2{
+    max-width: 746px;
+    margin-bottom: 16px;
+    margin-left: auto;
+}
+.project img{
+    margin-right: 24px;
+}
+.project-card, .project-content{
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer{
+    padding: 40px 0;
+    text-align: center;
+}
