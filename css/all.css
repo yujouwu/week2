@@ -289,8 +289,12 @@ h4 {
   margin-left: auto;
 }
 
-.project img {
+.project img:not(:last-child) {
   margin-right: 24px;
+}
+
+.project-intro {
+  margin-bottom: 28px;
 }
 
 .footer {
