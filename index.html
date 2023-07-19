@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Castoro&family=Noto+Sans+TC&display=swap" rel="stylesheet">
-    <!-- google icon 載入 -->
+    <!-- google icon -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- 自定義CSS -->
     <link rel="stylesheet" href="style.css">
@@ -18,28 +18,29 @@
 <body>
     <!-- header -->
     <div class="bg-black">
-            <ul class="container d-flex navbar">
+            <ul class="container d-flex justify-between navbar">
                 <li><a href="#">WILLIAM LEE</a></li>
                 <li><a href="#">BASED IN TAIWAN</a></li>
                 <li><a href="#">CURRENTLY FRONT END ENGINEER AT HEXSCHOOL</a></li>
                 <li><a href="#">CONTACT ME</a></li>
             </ul>
-            <div class="container d-flex profile">
+            <div class="container d-flex justify-between profile">
                 <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/people.png?raw=true" alt="Willian Lee Profile">
-                <div class="profile-content">
+                <div class="d-flex flex-col justify-center profile-content">
                     <h2 class="text-primary">Hi</h2>
                     <h2 class="text-primary">I’m a front-end developer</h2>
                     <h1>William</h1>
                     <a class="btn btn-white" href="#">contact me<span class="material-symbols-outlined">
                         arrow_outward
                         </span></a>
+                        
                 </div>
             </div>
     </div>
     <!-- content -->
     <div class="bg-image">
         <div class="container d-flex introduction">
-            <div class="introduction-content">
+            <div class="d-flex flex-col justify-center introduction-content">
                 <h2 class="text-primary">Introduction</h2>
                 <h3 class="text-s text-primary">Hi, I'm William Lee, a Front-End Developer with a passion for building beautiful and responsive websites that provide an optimal user experience.</h3>
                 <div class="d-flex">
@@ -84,7 +85,7 @@
         </div>
     </div>
     <div class="bg-gradient">
-        <div class="container d-flex contact">
+        <div class="container d-flex justify-between item-center contact">
             <div class="d-flex contact-text">
                 <h2 class="text-primary">CONTACT ME</h2>
                 <h2><img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/trending_flat_black_24dp%201.png?raw=true" alt="right arrow"></h2>
@@ -100,12 +101,12 @@
         <h2>My Projects</h2>
         <div class="d-flex">
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/Rectangle%2010.png?raw=true" alt="project image 1">
-            <div class="d-flex project-card">
+            <div class="d-flex flex-col justify-between">
                 <div class="d-flex">
                     <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/Rectangle%2015.png?raw=true" alt="project image 2">
-                    <div class="d-flex project-content">
+                    <div class="d-flex flex-col justify-between">
                         <p>I've worked on a variety of websites, including e-commerce sites, blogs, and landing pages. I take pride in creating clean, efficient, and user-friendly code.</p>
-                        <a class="btn btn-black" href="#">contact me<span class="material-symbols-outlined">
+                        <a class="btn btn-black" href="#">SEE MORE<span class="material-symbols-outlined">
                             arrow_outward
                             </span></a>
                     </div>
